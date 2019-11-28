@@ -16,7 +16,7 @@
   font-family: inherit;
   cursor: pointer;
   transition: background-color 0.4s linear, color 0.4s linear,
-    box-shadow 0.4s linear;
+    box-shadow 0.4s linear, border-color 0.4s linear;
   &:focus {
     outline: none;
   }
@@ -24,6 +24,7 @@
     background-color: @black;
     color: @white;
     box-shadow: 2px 2px 10px fade(#000000, 24%);
+    border-color: @black;
   }
   + .btn{
       margin-left: 1rem;
