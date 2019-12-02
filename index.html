@@ -122,13 +122,13 @@
     <div class="works">
       <div class="container">
         <div class="works__nav">
-          <a href="#" class="works__nav--link">All</a>
-          <a href="#" class="works__nav--link">App</a>
-          <a href="#" class="works__nav--link">Websites</a>
-          <a href="#" class="works__nav--link">Interaction</a>
+          <a href="#" class="works__nav--link" data-filter="all">All</a>
+          <a href="#" class="works__nav--link" data-filter="app">App</a>
+          <a href="#" class="works__nav--link" data-filter="websites">Websites</a>
+          <a href="#" class="works__nav--link" data-filter="interaction">Interaction</a>
         </div>
         <div class="portfolio">
-          <div class="portfolio__col">
+          <div class="portfolio__col" data-cat="app">
             <div class="work">
               <img
                 class="work__image"
@@ -136,7 +136,7 @@
                 alt="work"
               />
               <div class="work__content">
-                <div class="work__cat">Category</div>
+                <div class="work__cat">Category: app</div>
                 <div class="work__title">
                   Project Title<time
                     datetime="2019-11-27 15:00"
@@ -147,7 +147,7 @@
               </div>
             </div>
           </div>
-          <div class="portfolio__col">
+          <div class="portfolio__col" data-cat="websites">
             <div class="work">
               <img
                 class="work__image"
@@ -155,7 +155,7 @@
                 alt="work"
               />
               <div class="work__content">
-                <div class="work__cat">Category</div>
+                <div class="work__cat">Category: websites</div>
                 <div class="work__title">
                   Project Title<time
                     datetime="2019-11-27 15:00"
@@ -166,7 +166,7 @@
               </div>
             </div>
           </div>
-          <div class="portfolio__col">
+          <div class="portfolio__col" data-cat="websites">
             <div class="work">
               <img
                 class="work__image"
@@ -174,7 +174,7 @@
                 alt="work"
               />
               <div class="work__content">
-                <div class="work__cat">Category</div>
+                <div class="work__cat">Category: websites</div>
                 <div class="work__title">
                   Project Title<time
                     datetime="2019-11-27 15:00"
@@ -185,7 +185,7 @@
               </div>
             </div>
           </div>
-          <div class="portfolio__col">
+          <div class="portfolio__col" data-cat="interaction">
             <div class="work">
               <img
                 class="work__image"
@@ -193,7 +193,7 @@
                 alt="work"
               />
               <div class="work__content">
-                <div class="work__cat">Category</div>
+                <div class="work__cat">Category: interaction</div>
                 <div class="work__title">
                   Project Title<time
                     datetime="2019-11-27 15:00"
@@ -204,7 +204,7 @@
               </div>
             </div>
           </div>
-          <div class="portfolio__col">
+          <div class="portfolio__col" data-cat="app">
             <div class="work">
               <img
                 class="work__image"
@@ -212,7 +212,7 @@
                 alt="work"
               />
               <div class="work__content">
-                <div class="work__cat">Category</div>
+                <div class="work__cat">Category: app</div>
                 <div class="work__title">
                   Project Title<time
                     datetime="2019-11-27 15:00"
@@ -223,7 +223,7 @@
               </div>
             </div>
           </div>
-          <div class="portfolio__col">
+          <div class="portfolio__col" data-cat="interaction">
             <div class="work">
               <img
                 class="work__image"
@@ -231,7 +231,7 @@
                 alt="work"
               />
               <div class="work__content">
-                <div class="work__cat">Category</div>
+                <div class="work__cat">Category: interaction</div>
                 <div class="work__title">
                   Project Title<time
                     datetime="2019-11-27 15:00"
@@ -519,7 +519,7 @@
      <!--back to top button-->
      <p id="back_top"><a href="#top">back to top</a></p>
     <!--Modal window-->
-    <div class="modal" style="display: none;">
+    <div class="modal">
       <div class="modal__dialog">
         <button class="modal__close" type="button">
           <i class="fas fa-times fa-3x"></i>
@@ -579,7 +579,7 @@
     </div>
     <!--/.modal window-->
     <!--MODAL RESUME  -->
-    <div class="modal" style="display: none;">
+    <div class="modal">
       <div class="modal__dialog">
         <button class="modal__close" type="button">
           <i class="fas fa-times fa-3x"></i>
@@ -749,7 +749,7 @@
     </div>
     <!--/.modal window-->
     <!--MODAL Lets talk-->
-    <div class="modal" style="display: none;">
+    <div class="modal">
       <div class="modal__dialog modal__dialog--sm">
         <button class="modal__close" type="button">
           <i class="fas fa-times fa-3x"></i>
