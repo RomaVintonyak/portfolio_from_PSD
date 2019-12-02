@@ -104,4 +104,17 @@ $(function() {
       .find('[data-slider="slick"]');
     curentSlider.slick("slickNext");
   });
+  /*scroll to blocks*/
+  $("[data-scroll]").on("click", function(event) {
+    event.preventDefault();
+    var blockId = $(this).data("scroll");
+    var blockOffset = $(blockId).offset().top;
+    /*nav.removeClass("click");*/
+    $("html, body").animate(
+      {
+        scrollTop: blockOffset - 70
+      },
+      800
+    );
+  });
 });
