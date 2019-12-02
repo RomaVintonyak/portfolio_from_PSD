@@ -37,4 +37,46 @@ $(function() {
       });
     }
   });
+  /*script for modal window*/
+  const modallCall = $("[data-modal]");
+  const modallClose = $("[data-close]");
+  modallCall.on("click", function(event) {
+    event.preventDefault();
+    var $this = $(this);
+    var modalId = $this.data("modal");
+    $(modalId).addClass("show");
+    $("body").addClass("no__scroll");
+    setTimeout(function() {
+      $(modalId)
+        .find(".modal__dialog")
+        .css({
+          transform: "rotateX(0)"
+        });
+    }, 200);
+  });
+  modallClose.on("click", function(event) {
+    event.preventDefault();
+    var $this = $(this);
+    var modalParent = $this.parents(".modal");
+    modalParent.find(".modal__dialog").css({
+      transform: "rotateX(90deg)"
+    });
+    setTimeout(function() {
+      modalParent.removeClass("show");
+      $("body").removeClass("no__scroll");
+    }, 900);
+  });
+  $(".modal").on("click", function(event) {
+    var $this = $(this);
+    $this.find(".modal__dialog").css({
+      transform: "rotateX(90deg)"
+    });
+    setTimeout(function() {
+      $this.removeClass("show");
+      $("body").removeClass("no__scroll");
+    }, 900);
+  });
+  $(".modal__dialog").on("click", function(event) {
+    event.stopPropagation();
+  });
 });
