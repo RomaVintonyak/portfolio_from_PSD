@@ -65,7 +65,12 @@
             <a class="nav__link" href="#">about me</a>
             <a class="nav__link" href="#">blog</a>
             <a class="nav__link" href="#">contact</a>
-            <a class="nav__link nav__link--btn" href="#" data-modal="#modal_hire_me">hire me</a>
+            <a
+              class="nav__link nav__link--btn"
+              href="#"
+              data-modal="#modal_hire_me"
+              >hire me</a
+            >
           </nav>
         </div>
       </div>
@@ -108,7 +113,9 @@
               </a>
             </div>
             <a class="btn" href="#" data-modal="#modal_hire_me">Hire Me</a>
-            <button class="btn" type="button" data-modal="#modal_resume">See my Resume</button>
+            <button class="btn" type="button" data-modal="#modal_resume">
+              See my Resume
+            </button>
           </div>
           <img
             class="intro__photo"
@@ -124,8 +131,12 @@
         <div class="works__nav">
           <a href="#" class="works__nav--link" data-filter="all">All</a>
           <a href="#" class="works__nav--link" data-filter="app">App</a>
-          <a href="#" class="works__nav--link" data-filter="websites">Websites</a>
-          <a href="#" class="works__nav--link" data-filter="interaction">Interaction</a>
+          <a href="#" class="works__nav--link" data-filter="websites"
+            >Websites</a
+          >
+          <a href="#" class="works__nav--link" data-filter="interaction"
+            >Interaction</a
+          >
         </div>
         <div class="portfolio">
           <div class="portfolio__col" data-cat="app">
@@ -148,7 +159,7 @@
             </div>
           </div>
           <div class="portfolio__col" data-cat="websites">
-            <div class="work" data-modal="#modal_project_1">
+            <div class="work" data-modal="#modal_project_2">
               <img
                 class="work__image"
                 src="https://placehold.it/370X300/717072"
@@ -245,7 +256,9 @@
         </div>
         <!--/.portfolio-->
         <div class="text__center">
-          <a href="#" class="btn btn--sm" data-modal="#modal_project_1">load more works</a>
+          <a href="#" class="btn btn--sm" data-modal="#modal_project_1"
+            >load more works</a
+          >
         </div>
       </div>
       <!--/.container-->
@@ -281,7 +294,9 @@
               </p>
             </div>
             <a class="btn" href="#" data-modal="#modal_hire_me">Hire Me</a>
-            <button class="btn" type="button" data-modal="#modal_resume">See my Resume</button>
+            <button class="btn" type="button" data-modal="#modal_resume">
+              See my Resume
+            </button>
           </div>
         </div>
         <!--/.about__inner-->
@@ -507,8 +522,11 @@
             <a class="footer__nav--link" href="#">About Me</a>
             <a class="footer__nav--link" href="#">Blog</a>
             <a class="footer__nav--link" href="#">Contact</a>
-            <a class="footer__nav--link footer__nav--link--btn" href="#"
-            data-modal="#modal_hire_me">Hire Me</a
+            <a
+              class="footer__nav--link footer__nav--link--btn"
+              href="#"
+              data-modal="#modal_hire_me"
+              >Hire Me</a
             >
           </nav>
         </div>
@@ -516,8 +534,8 @@
       </div>
       <!--/.container-->
     </footer>
-     <!--back to top button-->
-     <p id="back_top"><a href="#top">back to top</a></p>
+    <!--back to top button-->
+    <p id="back_top"><a href="#top">back to top</a></p>
     <!--Modal window-->
     <div class="modal" id="modal_project_1">
       <div class="modal__dialog">
@@ -526,11 +544,36 @@
         </button>
         <div class="modal__work">
           <div class="modal__work-preview">
-            <img
-              class="modal__work-photo"
-              src="https://placehold.it/790x780"
-              alt="modal__work"
-            />
+            <div data-slider="slick">
+              <div>
+                <img
+                  class="modal__work-photo"
+                  src="https://placehold.it/790x780"
+                  alt="modal__work"
+                />
+              </div>
+              <div>
+                <img
+                  class="modal__work-photo"
+                  src="https://placehold.it/790x780/123456"
+                  alt="modal__work"
+                />
+              </div>
+              <div>
+                <img
+                  class="modal__work-photo"
+                  src="https://placehold.it/790x780/654321"
+                  alt="modal__work"
+                />
+              </div>
+              <div>
+                <img
+                  class="modal__work-photo"
+                  src="https://placehold.it/790x780/000000"
+                  alt="modal__work"
+                />
+              </div>
+            </div>
           </div>
           <div class="modal__work-content">
             <div class="modal__work-header">
@@ -558,13 +601,96 @@
             </div>
             <div class="modal__work-footer">
               <button
-                class="modal__work-btn modal__work-btn--prev"
+                class="modal__work-btn modal__work-btn--prev slickPrev"
                 type="button"
               >
                 Previous
               </button>
               <button
-                class="modal__work-btn modal__work-btn--next"
+                class="modal__work-btn modal__work-btn--next slickNext"
+                type="button"
+              >
+                Next
+              </button>
+            </div>
+          </div>
+          <!--/.modal__work-content-->
+        </div>
+        <!--/.modal__work-->
+      </div>
+      <!--/.modal__dialog-->
+    </div>
+    <div class="modal" id="modal_project_2">
+      <div class="modal__dialog">
+        <button class="modal__close" type="button" data-close>
+          <i class="fas fa-times fa-3x"></i>
+        </button>
+        <div class="modal__work">
+          <div class="modal__work-preview">
+            <div data-slider="slick">
+              <div>
+                <img
+                  class="modal__work-photo"
+                  src="https://placehold.it/790x780"
+                  alt="modal__work"
+                />
+              </div>
+              <div>
+                <img
+                  class="modal__work-photo"
+                  src="https://placehold.it/790x780/123456"
+                  alt="modal__work"
+                />
+              </div>
+              <div>
+                <img
+                  class="modal__work-photo"
+                  src="https://placehold.it/790x780/654321"
+                  alt="modal__work"
+                />
+              </div>
+              <div>
+                <img
+                  class="modal__work-photo"
+                  src="https://placehold.it/790x780/000000"
+                  alt="modal__work"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="modal__work-content">
+            <div class="modal__work-header">
+              <h3 class="modal__work-title">Project title№2</h3>
+              <div class="modal__work-info">
+                category <span class="modal__work-info-line">|</span> 2019
+              </div>
+            </div>
+            <div class="modal__work-client">
+              <div class="modal__work-client-title">Client:</div>
+              <div class="modal__work-client-company">Creative Agency</div>
+            </div>
+            <div class="modal__work-text">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem
+                delectus hic obcaecati cupiditate atque id?Lorem ipsum dolor sit
+                amet.
+              </p>
+              <br />
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem
+                delectus hic obcaecati cupiditate atque id?Lorem ipsum dolor sit
+                amet.
+              </p>
+            </div>
+            <div class="modal__work-footer">
+              <button
+                class="modal__work-btn modal__work-btn--prev slickPrev"
+                type="button"
+              >
+                Previous
+              </button>
+              <button
+                class="modal__work-btn modal__work-btn--next slickNext"
                 type="button"
               >
                 Next
@@ -802,6 +928,8 @@
     <!--/.modal-->
     <!--script for page-->
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!--slick slider-->
+    <script type="text/javascript" src="js/slick.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>
