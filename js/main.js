@@ -117,4 +117,9 @@ $(function() {
       800
     );
   });
+  /*clas show for burger button*/
+  $(".burger").on("click", function(event) {
+    event.preventDefault();
+    $(".burger__icon").toggleClass("show");
+  });
 });
