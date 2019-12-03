@@ -15,6 +15,12 @@
         top: 0;
         left: 50%;
         z-index: 1;
+        @media @mobile-sm{
+            display: none;
+        }
+    }
+    @media @mobile-sm{
+        flex-wrap: wrap;
     }
 }
 .timeline__col{
@@ -22,9 +28,23 @@
     &--left{
         text-align: right;
         padding-right: 3.2rem;
+        @media @mobile{
+            padding-right: 0.3rem;
+        }
+        @media @mobile-sm{
+            padding-right: 0;
+            width: 100%;
+        }
     }
     &--right{
         padding-left: 3.2rem;
+        @media @mobile{
+            padding-left: 0.3rem;
+        }
+        @media @mobile-sm{
+            padding-left: 0;
+            width: 100%;
+        }
     }
 }
 .timeline__title{
