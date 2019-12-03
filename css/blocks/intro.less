@@ -1,5 +1,9 @@
 //main: ../style.less
-
+.intro{
+  @media @mobile{
+    margin-top: 70px;
+  }
+}
 .intro__inner {
   display: flex;
   position: relative;
@@ -12,20 +16,35 @@
     padding-bottom: 3rem;
     background-size: 415px auto;
   }
+  @media @mobile{
+    background-size: 235px auto;
+  }
 }
 .intro__content {
   width: 50%;
+  @media @mobile{
+    width: 70%;
+  }
+  @media @mobile-sm{
+    width: 100%;
+}
 }
 .intro__subtitle {
   font-size: 2.13rem;
   font-weight: 200;
   color: @black;
+  @media @tablet {
+    font-size: 1.5rem;
+  }
 }
 .intro__title {
   font-size: 3rem;
   color: @black;
   margin-bottom: 5px;
   font-weight: 700;
+  @media @tablet {
+    font-size: 2rem;
+  }
 }
 .intro__text {
   font-size: 1.2rem;
@@ -38,6 +57,16 @@
   right: 65px;
   z-index: 1;
   @media @tablet {
+    height: 340px;
     width: 350px;
+    right: 20px;
   }
+  @media @mobile {
+    height: 225px;
+    width: 240px;
+    right: -20px;
+  }
+  @media @mobile-sm{
+    display: none;
+}
 }

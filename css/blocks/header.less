@@ -2,6 +2,16 @@
 
 .header{
     padding: 1.2rem 0;
+    position: relative;
+    @media @mobile{
+        background-color: #ffffff;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1000;
+        box-shadow: 12px 4px 12px rgba(0, 0, 0, 0.7);
+    }
 }
 .header__iner {
     display: flex;

@@ -1,10 +1,25 @@
 //main: ../style.less
 .nav {
   display: flex;
+  flex-wrap: wrap;
   height: 100%;
   align-items: center;
+  
   @media @mobile {
     display: none;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    position: absolute;
+    background-color: #ffffff;
+    text-align: center;
+    box-shadow: 0 35px 12px rgba(0, 0, 0, 0.7);
+    top: 100%;
+    right: 0;
+    z-index: 100;
+    &.click{
+      display: flex;
+    }
   }
 }
 .nav__link {
@@ -46,4 +61,9 @@
       color: @white;
     }
   }
+  @media @mobile{
+    width: 100%;
+    margin-left: 0;
+    padding: 0.5rem 1rem;
+    }
 }

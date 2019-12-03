@@ -122,4 +122,9 @@ $(function() {
     event.preventDefault();
     $(".burger__icon").toggleClass("show");
   });
+  /*Nav Toggle Button for mobile devicess*/
+  $("#navToggle").on("click", function(event){
+    event.preventDefault();
+    $(".nav").toggleClass("click");
+  })
 });
